@@ -26,6 +26,7 @@ main {
 nav {
 	display: flex;
 	justify-content: space-between;
+	padding: 2em 1em 0 1em;
 }
 
 nav ul {
@@ -38,7 +39,6 @@ nav li:not(:nth-child(4)) {
 }
 
 header {
-	padding: 2.5em 0 3em 0;
 	border-bottom: 4px solid black;
 }
 
@@ -47,3 +47,6 @@ header p {
 	text-align: center;
 }
 
+header>*:not(nav) {
+	color: blue;
+}
